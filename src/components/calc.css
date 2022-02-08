@@ -1,0 +1,33 @@
+.calc-container {
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+  background-color: rgba(241, 241, 241, 0.8);
+  border: 1px solid rgba(233, 233, 233, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.input {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: rgb(172, 172, 172);
+  color: aliceblue;
+  text-align: right;
+}
+
+.orange {
+  background-color: orange;
+}
