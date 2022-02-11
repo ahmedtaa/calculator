@@ -1,30 +1,50 @@
 import React, { Component } from 'react';
+import calculate from '../logic/calculate';
+
 import './calc.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Calc extends Component {
   constructor(props) {
     super(props);
-    this.state = { inputDisplay: 0 };
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
   // eslint-disable-next-line class-methods-use-this
   btnPressed = (e) => {
-    this.setState({ inputDisplay: e.target.innerHTML });
+    if (e.target.innerHTML === 'AC') {
+      this.setState({
+        total: 0,
+        next: null,
+        operation: null,
+      });
+    } else {
+      this.setState({ total: e.target.innerHTML });
+
+      const temp = calculate(this.state, e.target.innerHTML);
+
+      const { total, next, operation } = temp;
+      this.setState({ total, next, operation });
+    }
   };
 
   render() {
-    const { inputDisplay } = this.state;
+    const { total, next } = this.state;
+
     return (
       <div className="calc-container">
         <div className="grid-container">
           <input
             type="text"
             className="grid-item input"
-            defaultValue={inputDisplay}
-            value={inputDisplay}
+            defaultValue={0}
+            value={next || total}
           />
-          <button type="button" className="grid-item">
+          <button type="button" className="grid-item" onClick={this.btnPressed}>
             AC
           </button>
           <button type="button" className="grid-item" onClick={this.btnPressed}>
