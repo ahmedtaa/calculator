@@ -21,8 +21,8 @@
 
 👤 **Author1**
 
-- GitHub: [@ahmedtaa(https://github.com/ahmedta)
-- Twitter: [@_ahmedta_](https://twitter.com/_ahmedta_)
+- GitHub: [@ahmedtaa](https://github.com/ahmedta)
+- Twitter: [@\_ahmedta](https://twitter.com/_ahmedta)
 
 ## 🤝 Contributing
 
