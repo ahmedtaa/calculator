@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
