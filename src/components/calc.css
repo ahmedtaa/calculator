@@ -1,4 +1,14 @@
+.calc-page {
+  display: flex;
+  align-items: flex-start;
+}
+
+.calc-header {
+  flex-grow: 1;
+}
+
 .calc-container {
+  flex-grow: 1;
   width: 50%;
 }
 

@@ -30,71 +30,94 @@ const Calc = () => {
   const { total, next } = state;
 
   return (
-    <div className="calc-container">
-      <div className="grid-container">
-        <input
-          type="text"
-          className="grid-item input"
-          defaultValue={0}
-          value={next || total}
-        />
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          AC
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          +/-
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          %
-        </button>
-        <button type="button" className="grid-item orange" onClick={btnPressed}>
-          &divide;
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          7
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          8
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          9
-        </button>
-        <button type="button" className="grid-item orange" onClick={btnPressed}>
-          x
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          4
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          5
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          6
-        </button>
-        <button type="button" className="grid-item orange" onClick={btnPressed}>
-          -
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          1
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          2
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          3
-        </button>
-        <button type="button" className="grid-item orange" onClick={btnPressed}>
-          +
-        </button>
-        <button type="button" className="grid-item zero" onClick={btnPressed}>
-          0
-        </button>
-        <button type="button" className="grid-item" onClick={btnPressed}>
-          .
-        </button>
-        <button type="button" className="grid-item orange" onClick={btnPressed}>
-          =
-        </button>
+    <div className="calc-page">
+      <h2 className="calc-header">Lets do some math</h2>
+      <div className="calc-container">
+        <div className="grid-container">
+          <input
+            type="text"
+            className="grid-item input"
+            defaultValue={0}
+            value={next || total}
+          />
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            AC
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            +/-
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            %
+          </button>
+          <button
+            type="button"
+            className="grid-item orange"
+            onClick={btnPressed}
+          >
+            &divide;
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            7
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            8
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            9
+          </button>
+          <button
+            type="button"
+            className="grid-item orange"
+            onClick={btnPressed}
+          >
+            x
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            4
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            5
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            6
+          </button>
+          <button
+            type="button"
+            className="grid-item orange"
+            onClick={btnPressed}
+          >
+            -
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            1
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            2
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            3
+          </button>
+          <button
+            type="button"
+            className="grid-item orange"
+            onClick={btnPressed}
+          >
+            +
+          </button>
+          <button type="button" className="grid-item zero" onClick={btnPressed}>
+            0
+          </button>
+          <button type="button" className="grid-item" onClick={btnPressed}>
+            .
+          </button>
+          <button
+            type="button"
+            className="grid-item orange"
+            onClick={btnPressed}
+          >
+            =
+          </button>
+        </div>
       </div>
     </div>
   );
