@@ -9,10 +9,10 @@
 - HTML, CSS and JS
 - ReactJS library
 
-## Live Demo (if available)
+## Live Demos
 
-[Live Demo Link : Heroku](https://math1998-magic.herokuapp.com/)
-[Live Demo Link : netlify](https://math1998-magic.herokuapp.com/)
+- [ Heroku](https://math1998-magic.herokuapp.com/)
+- [ netlify](https://math1998-magic.herokuapp.com/)
 
 ## Getting Started
 
