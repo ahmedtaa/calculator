@@ -12,7 +12,7 @@
 ## Live Demos
 
 - [ Heroku](https://math1998-magic.herokuapp.com/)
-- [ netlify](https://math1998-magic.herokuapp.com/)
+- [ netlify](https://serene-shirley-e273bc.netlify.app/)
 
 ## Getting Started
 
